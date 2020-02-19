@@ -1,9 +1,10 @@
 #! /usr/bin/env python
 # -* coding: utf-8 -*
 
-
 # Official packages
-from tornado.options import define, options
+import tornado.options
+# from tornado.log import define_logging_options
+
 # 3rd-party Packages
 
 
@@ -14,8 +15,12 @@ from tornado.options import define, options
 
 
 # Class & Function Definition
-
-define(
+# class OptionParser(tornado.options.OptionParser):
+#     def set(self, name, key, value):
+#         self._options[name].update(key, value)
+# options = OptionParser()
+options = tornado.options.options
+tornado.options.define(
     "config-file",
     group="",
     default="/usr/local/etc/tornado.conf",
@@ -25,7 +30,7 @@ define(
     ),
     callback=lambda path: options.parse_config_file(path, final=False)
 )
-define(
+tornado.options.define(
     "debug",
     group="",
     default=False,
@@ -36,6 +41,8 @@ define(
 )
 
 # Logic
+print(1)
 options.parse_config_file('conf/tornado.conf')
+print(2)
 options.parse_command_line()
 
