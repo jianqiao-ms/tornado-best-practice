@@ -130,5 +130,9 @@ dmypy.json
 
 conf/*.conf
 
+<<<<<<< HEAD
 .idea/
 *test*
+=======
+.idea/
+>>>>>>> 9849d3293a6f59aa2bcdede1d97129cc9049a9dd
