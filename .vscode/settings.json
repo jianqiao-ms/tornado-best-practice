@@ -1,0 +1,21 @@
+{
+  "editor.rulers": [ 120 ],
+  "editor.tabSize": 4,
+  "editor.smoothScrolling": true,
+  "editor.find.addExtraSpaceOnTop": true,
+  "[json]": {
+    "editor.tabSize": 2
+  },
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+  "python.autoComplete.addBrackets": true,
+  "explorer.openEditors.visible": 0,
+  "files.autoSave": "afterDelay",
+  "python.pythonPath": "/usr/bin/python3",
+  "macros": {
+    "commentLine": [
+      "editor.action.commentLine",
+      "cursorDown"
+    ]
+  }
+}

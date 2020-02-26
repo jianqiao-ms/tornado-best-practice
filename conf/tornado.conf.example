@@ -1,0 +1,11 @@
+[global]
+debug                 = False
+port                  = 8888
+
+[logging]
+logging               = info
+log-to-stderr         = False
+log-rotate-when       = D
+log-rotate-interval   = 1
+log-rotate-mode       = time
+log-file-num-backups  = 7
